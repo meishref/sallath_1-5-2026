@@ -1,0 +1,10 @@
+{% extends 'layouts/master.twig' %}
+
+{% block title %}{{ page.title|default('Page') }}{% endblock %}
+
+{% block content %}
+  <section class="container generic-page">
+    <h1>{{ page.title|default('About Our Nursery') }}</h1>
+    <p>{{ page.content|default('We deliver fresh plants, seeds, and gardening accessories to help you create your own green space.') }}</p>
+  </section>
+{% endblock %}

@@ -1,0 +1,62 @@
+<aside class="filters" aria-label="{{ 'filters'|trans }}">
+  <div class="filters__header">
+    <h2>{{ 'filters'|trans }}</h2>
+    <button type="button" class="filters__clear js-clear-filters">Clear filters</button>
+  </div>
+
+  <section class="filters__section">
+    <h3>{{ 'categories'|trans }}</h3>
+    <label class="filter-option">
+      <input type="checkbox" name="category" value="indoor">
+      <span>Indoor Plants</span>
+    </label>
+    <label class="filter-option">
+      <input type="checkbox" name="category" value="air">
+      <span>Air Purifying</span>
+    </label>
+    <label class="filter-option">
+      <input type="checkbox" name="category" value="succulents">
+      <span>Succulents</span>
+    </label>
+  </section>
+
+  <section class="filters__section">
+    <h3>Size</h3>
+    <label class="filter-option">
+      <input type="checkbox" name="size" value="small">
+      <span>Small</span>
+    </label>
+    <label class="filter-option">
+      <input type="checkbox" name="size" value="medium">
+      <span>Medium</span>
+    </label>
+    <label class="filter-option">
+      <input type="checkbox" name="size" value="large">
+      <span>Large</span>
+    </label>
+  </section>
+
+  <section class="filters__section">
+    <h3>{{ 'price'|trans }}</h3>
+    <div class="price-slider">
+      <input type="range" class="js-price-range" min="10" max="120" value="80" step="5">
+      <div class="price-slider__value">$<span class="js-price-value">80</span></div>
+    </div>
+  </section>
+
+  <section class="filters__section">
+    <h3>Benefits</h3>
+    <label class="filter-option">
+      <input type="checkbox" name="benefit" value="pet-friendly">
+      <span>Pet Friendly</span>
+    </label>
+    <label class="filter-option">
+      <input type="checkbox" name="benefit" value="low-maintenance">
+      <span>Low Maintenance</span>
+    </label>
+    <label class="filter-option">
+      <input type="checkbox" name="benefit" value="beginner">
+      <span>Beginner Friendly</span>
+    </label>
+  </section>
+</aside>

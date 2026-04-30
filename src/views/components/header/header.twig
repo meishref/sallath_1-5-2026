@@ -1,0 +1,23 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="/" class="site-logo">
+      <span class="site-logo__icon">🌿</span>
+      <span class="site-logo__text">{{ 'store_name'|trans }}</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="/">{{ 'home'|trans }}</a>
+      <a href="/product">{{ 'products'|trans }}</a>
+      <a href="/brands">{{ 'brands'|trans }}</a>
+      <a href="/blog">{{ 'blog'|trans }}</a>
+      <a href="/page/about">{{ 'about'|trans }}</a>
+    </nav>
+
+    <div class="header-tools">
+      <form class="search-box" action="/search">
+        <input type="search" placeholder="{{ 'search_plants'|trans }}" aria-label="{{ 'search'|trans }}">
+      </form>
+      <a href="/cart" class="cart-btn" aria-label="{{ 'cart'|trans }}">🛒</a>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,20 @@
+<section class="home-section container">
+  <div class="section-head">
+    <h2>{{ 'featured_products'|trans }}</h2>
+    <div>
+      <button class="slider-nav js-prev">‹</button>
+      <button class="slider-nav js-next">›</button>
+    </div>
+  </div>
+  <div class="featured-slider js-featured-slider">
+    {% set featured = [
+      {name: 'Majesty Palm', price: '55', image: 'https://images.unsplash.com/photo-1463320726281-696a485928c7?auto=format&fit=crop&w=800&q=80'},
+      {name: 'Snake Plant', price: '38', image: 'https://images.unsplash.com/photo-1459156212016-c812468e2115?auto=format&fit=crop&w=800&q=80'},
+      {name: 'Monstera', price: '65', image: 'https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?auto=format&fit=crop&w=800&q=80'},
+      {name: 'Aloe Vera', price: '25', image: 'https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=800&q=80'}
+    ] %}
+    {% for product in featured %}
+      {% include 'components/product/product-card.twig' with { product: product } %}
+    {% endfor %}
+  </div>
+</section>

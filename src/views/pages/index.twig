@@ -1,0 +1,15 @@
+{% extends 'layouts/master.twig' %}
+
+{% block title %}{{ 'store_name'|trans }}{% endblock %}
+
+{% block content %}
+  {% include 'components/home/hero.twig' %}
+  {% include 'components/home/categories.twig' %}
+  {% include 'components/home/featured-slider.twig' %}
+  {% include 'components/home/why-choose-us.twig' %}
+  {% include 'components/home/testimonials.twig' %}
+  {% include 'components/home/tips.twig' %}
+  {% include 'components/home/plant-care-widget.twig' %}
+  {% include 'components/home/water-reminder.twig' %}
+  {% include 'components/comments.twig' %}
+{% endblock %}

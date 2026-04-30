@@ -1,0 +1,10 @@
+{% extends 'layouts/master.twig' %}
+
+{% block title %}{{ article.title|default('Plant Care Article') }}{% endblock %}
+
+{% block content %}
+  <section class="container generic-page">
+    <h1>{{ article.title|default('Plant Care Article') }}</h1>
+    <p>{{ article.content|default('Article content goes here.') }}</p>
+  </section>
+{% endblock %}

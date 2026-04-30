@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ locale|default('en') }}" dir="{{ locale == 'ar' ? 'rtl' : 'ltr' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{{ 'store_name'|trans }}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ 'assets/styles/theme.css'|asset }}">
+  <link rel="stylesheet" href="{{ 'assets/styles/product-list.css'|asset }}">
+</head>
+<body>
+  {% include 'components/header/header.twig' %}
+
+  <main class="site-main">
+    {% block content %}{% endblock %}
+  </main>
+
+  {% include 'components/footer/footer.twig' %}
+
+  <script src="{{ 'assets/js/theme.js'|asset }}"></script>
+  <script src="{{ 'assets/js/product-list.js'|asset }}"></script>
+</body>
+</html>

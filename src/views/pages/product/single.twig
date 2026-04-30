@@ -1,0 +1,12 @@
+{% extends 'layouts/master.twig' %}
+
+{% block title %}{{ product.name|default('Plant Product') }}{% endblock %}
+
+{% block content %}
+  <section class="container generic-page">
+    <h1>{{ product.name|default('Plant Product') }}</h1>
+    <p>{{ product.description|default('Detailed product information goes here.') }}</p>
+    <p><strong>${{ product.price|default('49') }}</strong></p>
+    <button class="btn-primary" type="button">{{ 'add_to_cart'|trans }}</button>
+  </section>
+{% endblock %}

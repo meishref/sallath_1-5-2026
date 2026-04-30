@@ -1,0 +1,10 @@
+{% extends 'layouts/master.twig' %}
+
+{% block title %}{{ brand.name|default('Brand') }}{% endblock %}
+
+{% block content %}
+  <section class="container generic-page">
+    <h1>{{ brand.name|default('Brand') }}</h1>
+    <p>{{ brand.description|default('Brand details and products.') }}</p>
+  </section>
+{% endblock %}

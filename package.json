@@ -1,0 +1,17 @@
+{
+  "name": "salatheme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server src --port=5500 --open=/views/pages/index.twig",
+    "start": "live-server src --port=5500 --open=/views/pages/index.twig"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

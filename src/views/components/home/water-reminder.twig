@@ -1,0 +1,10 @@
+<section class="home-section container widget-card water-reminder">
+  <h2>{{ 'water_reminder'|trans }}</h2>
+  <p>{{ 'water_reminder_desc'|trans }}</p>
+  <div class="water-reminder__row">
+    <label for="plant-name">{{ 'plant_name'|trans }}</label>
+    <input id="plant-name" class="js-plant-name" type="text" placeholder="Monstera">
+    <button class="btn-primary js-reminder-btn" type="button">{{ 'set_reminder'|trans }}</button>
+  </div>
+  <p class="water-reminder__status js-reminder-status"></p>
+</section>
