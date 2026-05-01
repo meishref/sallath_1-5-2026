@@ -3,9 +3,7 @@
     "ar": "مشتل العش الأخضر",
     "en": "Green Nest Nursery"
   },
-  "version": "1.0.0",
-  "repository": "https://example.com/green-nest-theme",
-  "support": "https://example.com/support",
+  "repository": "https://github.com/your-org/green-nest-theme",
   "features": [
     "mega-menu",
     "fonts",
@@ -13,72 +11,6 @@
     "breadcrumb",
     "component-featured-products",
     "component-products-slider",
-    "component-testimonials",
-    "filters"
-  ],
-  "settings": [
-    {
-      "type": "string",
-      "id": "placeholder",
-      "format": "hidden",
-      "value": "images/placeholder-plant.jpg"
-    },
-    {
-      "type": "boolean",
-      "id": "topnav_is_dark",
-      "label": "Dark top navigation",
-      "format": "switch",
-      "selected": false
-    }
-  ],
-  "components": [
-    {
-      "name": "hero",
-      "title": "Hero Section",
-      "icon": "sicon-image",
-      "path": "home.hero"
-    },
-    {
-      "name": "categories",
-      "title": "Categories Section",
-      "icon": "sicon-category",
-      "path": "home.categories"
-    },
-    {
-      "name": "featured-slider",
-      "title": "Featured Products Slider",
-      "icon": "sicon-products",
-      "path": "home.featured-slider"
-    },
-    {
-      "name": "why-choose-us",
-      "title": "Why Choose Us",
-      "icon": "sicon-check-circle",
-      "path": "home.why-choose-us"
-    },
-    {
-      "name": "testimonials",
-      "title": "Testimonials",
-      "icon": "sicon-chat",
-      "path": "home.testimonials"
-    },
-    {
-      "name": "tips",
-      "title": "Plant Care Tips",
-      "icon": "sicon-book",
-      "path": "home.tips"
-    },
-    {
-      "name": "plant-care-widget",
-      "title": "Plant Care Widget",
-      "icon": "sicon-flower",
-      "path": "home.plant-care-widget"
-    },
-    {
-      "name": "water-reminder",
-      "title": "Water Reminder",
-      "icon": "sicon-bell",
-      "path": "home.water-reminder"
-    }
+    "component-testimonials"
   ]
 }
