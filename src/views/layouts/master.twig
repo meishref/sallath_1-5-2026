@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}{{ 'store_name'|trans }}{% endblock %}</title>
-  <link rel="stylesheet" href="{{ 'assets/styles/theme.css'|asset }}">
-  <link rel="stylesheet" href="{{ 'assets/styles/product-list.css'|asset }}">
+  {# Paths are relative to src/assets/ — see Twilight |asset filter (docs.salla.dev) #}
+  <link rel="stylesheet" href="{{ 'styles/theme.css'|asset }}">
+  <link rel="stylesheet" href="{{ 'styles/product-list.css'|asset }}">
+  {% block styles %}{% endblock %}
 </head>
 <body>
   {% include 'components/header/header.twig' %}
@@ -16,7 +18,8 @@
 
   {% include 'components/footer/footer.twig' %}
 
-  <script src="{{ 'assets/js/theme.js'|asset }}"></script>
-  <script src="{{ 'assets/js/product-list.js'|asset }}"></script>
+  <script src="{{ 'js/theme.js'|asset }}"></script>
+  <script src="{{ 'js/product-list.js'|asset }}"></script>
+  {% block scripts %}{% endblock %}
 </body>
 </html>
